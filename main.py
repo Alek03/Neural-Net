@@ -6,7 +6,7 @@ print("raw data", data)
 data = np.array(data)
 
 labels = data[:, 0]
-training = data[:, 1:]
+training = data[:, 0:]
 print(training)
 
 np.random.seed(42)
