@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-data = pd.read_csv('/Users/alekmelenski/Desktop/NeuralNet/train.csv')
-testing = pd.read_csv('/Users/alekmelenski/Desktop/NeuralNet/test.csv')
+data = pd.read_csv('path')
+testing = pd.read_csv('path')
 data = np.array(data)
 
 labels = data[:, 0]
