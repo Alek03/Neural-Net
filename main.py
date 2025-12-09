@@ -80,7 +80,7 @@ W1, b1, W2, b2 = init_params(BATCHSIZE, 10, 10)
 epochs = 100
 LEARNING_RATE = 0.001
 for epoch in range(epochs):
-    print(f"\n=== Epoch {epoch+1} ===")
+    print(f"\nEpoch {epoch+1}: ")
     
     #Forward pass
     Z1, A1, Z2, y = forward_prop(W1, b1, W2, b2, inputs)
