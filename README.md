@@ -67,8 +67,7 @@ This project implements a fully-connected feedforward neural network in Python u
 - **Hyperparameters:**  
   - `BATCHSIZE`: number of examples per batch  
   - `LEARNING_RATE`: step size for gradient updates  
-  - `epochs`: number of training iterations  
-  - `hidden_layer_size`: number of neurons in hidden layer  
+  - `epochs`: number of training iterations   
 
 ---
 
