@@ -102,13 +102,13 @@ for epoch in range(epochs):
     dReLU_output = dReLU(dInput2, Z1)
     dWeight1, dBias1, dInput1 = dLayer(training_batch, W1, dReLU_output)
     
-    # Gradient descent update
+    # gradient descent
     W1 -= LEARNING_RATE * dWeight1
     W2 -= LEARNING_RATE * dWeight2
     b1 -= LEARNING_RATE * dBias1
     b2 -= LEARNING_RATE * dBias2
     
-    # Print progress
+    #prints
     current_loss = loss(y, labels_batch)
     current_accuracy = accuracy(y, labels_batch)
     print(f"Loss: {current_loss:.7f}, Accuracy: {current_accuracy:.4f}")
