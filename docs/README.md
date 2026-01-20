@@ -5,12 +5,6 @@ This project implements a fully-connected feedforward neural network in Python u
 ---
 
 ## Network Architecture
-| Layer        | Neurons | Activation |
-|-------------|--------|-----------|
-| Input       | 784    | -         |
-| Hidden      | Configurable | ReLU      |
-| Output      | 10     | Softmax   |
-
 <p align="center">
   <img src="Architecture.png" width="550">
 </p>
