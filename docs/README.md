@@ -12,7 +12,7 @@ This project implements a fully-connected feedforward neural network in Python u
 | Hidden      | Configurable | ReLU      |
 | Output      | 10     | Softmax   |
 
-![Alt text for the image](Architecture.png)
+<img src="docs/Architecture.png" width="300">
 
 ---
 
