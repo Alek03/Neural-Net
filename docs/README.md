@@ -13,7 +13,7 @@ This project implements a fully-connected feedforward neural network in Python u
 | Output      | 10     | Softmax   |
 
 <p align="center">
-  <img src="Architecture" width="250">
+  <img src="Architecture.png" width="550">
 </p>
 
 ---
