@@ -5,9 +5,10 @@ This project implements a fully-connected feedforward neural network in Python u
 ---
 
 ## Network Architecture
-<p align="center">
-  <img src="Architecture.png" width="550">
-</p>
+<figure>
+  <img src="docs/your-image.png" width="550" alt="Description of image">
+  <figcaption align="center"><i>This is your image subtext/caption.</i></figcaption>
+</figure>
 
 ---
 
