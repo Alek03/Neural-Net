@@ -87,7 +87,7 @@ LEARNING_RATE = 0.001
 BATCHSIZE = 500
 
 for epoch in range(epochs):
-    print(f"\n=== Epoch {epoch+1} ===")
+    print(f"\nEpoch: {epoch+1}")
     
     indicies = np.random.randint(0, len(training), size = BATCHSIZE)
     training_batch = training[indicies]
