@@ -26,7 +26,7 @@ def ReLU(x):
 
 def softmax(x):
     x = x - np.max(x, axis=1, keepdims=True) #need this for exp overflow
-                      #Also note for future, if using batches, need an axis parameter
+                      
     return np.exp(x) / np.sum(np.exp(x), axis=1, keepdims=True)
 
 def forward_prop(W1, b1, W2, b2, input):
@@ -56,7 +56,7 @@ def dLoss(y ,labels):
     
     one_hot = np.eye(10)[labels] #One hot encode labels
                                  #one_hot = np.eye(10)[labels[:BATCHSIZE]]
-    #Gradient                       ^Interesting to note that this still works somehow
+    #Gradient                       
     dLoss = y - one_hot
     #Normalize Gradient
     dLoss_norm = dLoss / len(labels)
