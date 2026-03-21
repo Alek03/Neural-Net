@@ -5,7 +5,7 @@ This project implements a fully-connected feedforward neural network in Python u
 ---
 
 ## Network Architecture
-
+![Architecture](docs/Architecture.png)
 ---
 
 ## Forward Propagation
