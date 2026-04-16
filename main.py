@@ -112,20 +112,3 @@ for epoch in range(epochs):
     current_loss = loss(y, labels_batch)
     current_accuracy = accuracy(y, labels_batch)
     print(f"Loss: {current_loss:.7f}, Accuracy: {current_accuracy:.4f}")
-
-
-def kaggleTest(testing):
-    
-    _, _, _, predicted = forward_prop(W1, b1, W2, b2, testing)
-
-    predicted = np.argmax(predicted, axis = 1)
-
-    predictedDf = pd.DataFrame({
-        "ImageId": np.arange(1, len(predicted) + 1),
-        "Label": predicted
-        })
-    
-    print(predictedDf)
-    predictedDf.to_csv("submission.csv", index=False)
-
-#kaggleTest(testing=testing)
