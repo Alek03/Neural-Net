@@ -25,7 +25,7 @@ def ReLU(x):
     return np.maximum(0, x)
 
 def softmax(x):
-    x = x - np.max(x, axis=1, keepdims=True) #need this for exp overflow
+    x = x - np.max(x, axis=1, keepdims=True) #handles exp overflow
                       
     return np.exp(x) / np.sum(np.exp(x), axis=1, keepdims=True)
 
